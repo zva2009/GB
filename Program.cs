@@ -1,18 +1,15 @@
-﻿// Решение задачи 2
-Console.WriteLine("Введите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+﻿Console.WriteLine("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
- 
-    if(num1 > num2)
-        {
-            Console.WriteLine("Наибольшее число =  " +num1);
-            Console.WriteLine("Наименьшее число =  " +num2);
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите третье число: ");
+int с = Convert.ToInt32(Console.ReadLine());
+int max = a;
+if (a > max ) max = a;
+if (b > max ) max = b;
+if (с > max ) max = с;
 
-        }
-    else if (num1 < num2)
-        {
-            Console.WriteLine("Наибольшее число =  " +num2);
-            Console.WriteLine("Наименьшее число =  " +num1);
-        }
-            
+Console.WriteLine("Максимальное число = " + max);
+
+        
+
